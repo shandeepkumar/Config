@@ -1,0 +1,21 @@
+<%SUBJECT%> Request for Access to SULIT Supporting Documents
+Dear Director,
+<BR>
+<BR>
+There is a request to access <%supporting doc name%> of <%policy document title%>. Details of request are as follows: 
+<BR>
+<BR>
+Name : <%Requester Name%>
+<BR>
+Designation : <%Requester Designation%>
+<BR>
+Department : <%Requester Department%>
+<BR>
+Reason/s for request : <%Reason for request%>
+<BR>
+<BR>
+To view the supporting document:  click here
+<BR>
+To approve / reject this request: click here
+<BR>
+

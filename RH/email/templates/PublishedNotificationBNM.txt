@@ -1,0 +1,14 @@
+<%SUBJECT%>Latest Publication in the Regulatory Handbook
+Dear All, 
+<BR>
+<BR>
+The <%title of the policy%> has been published in the Regulatory Handbook on <%issuance date%>
+<BR>
+<BR>
+<%Applicability%>:
+<BR>
+<BR>
+To access, please click on the following link http://b2fi.w2k.bnm.gov.my
+<BR>
+<BR>
+Thank you & regards.

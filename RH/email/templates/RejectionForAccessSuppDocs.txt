@@ -1,0 +1,10 @@
+Dear <%Requester Name%>,
+<BR>
+<BR>
+Your request to access <%supporting doc name%> of <%policy document title%> has been rejected.
+The reason for rejection is: <%rejection reason%>
+
+<BR>
+<BR>
+Thank you
+

@@ -1,0 +1,12 @@
+<%SUBJECT%>Latest Publication in the FI@Kijangnet.
+
+Dear All, 
+<BR>
+<BR>
+The <%title of the policy%> has been published in the Regulatory Handbook on <%issuance date%>
+<BR>
+<BR>
+To access the FI@Kijangnet, please click on the following link https://kijangnet.bnm.gov.my
+<BR>
+<BR>
+Thank you & regards.

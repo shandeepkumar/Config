@@ -1,0 +1,18 @@
+<%SUBJECT%> 
+Dear <%name of enquirer%>,
+<BR>
+<BR>
+Your enquiry on <%policy title%> ,details as follows:
+<BR>
+<BR>
+Question:-
+<BR>
+<%Question%>
+<BR>
+<BR>
+Answer
+<BR>
+<%Answer%>
+<BR>
+<BR>
+Thank you.

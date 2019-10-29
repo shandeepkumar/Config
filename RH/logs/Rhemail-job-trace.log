@@ -1,0 +1,885 @@
+24-10-2019 10:44:54,043 ERROR (EnquiryJob.java:104)     – JBO-27122: SQL error during statement preparation.  Statement: SELECT * FROM (SELECT Enquiryfaq.Abstract AS Abstract11, 
+       Enquiryfaq.AddField, 
+       Enquiryfaq.CreatedbyInstitutionId, 
+       Enquiryfaq.CurrentItemtype, 
+       Enquiryfaq.EnquirerBNMRole, 
+       Enquiryfaq.EnquirerFIRole, 
+       Enquiryfaq.EnquiryFAQId, 
+       Enquiryfaq.EnquiryOrFaq, 
+       Enquiryfaq.OrigAbstract, 
+       Enquiryfaq.OrigTitle, 
+       Enquiryfaq.OriginType, 
+       Enquiryfaq.OriginalItemtype, 
+       Enquiryfaq.Title, 
+       Enquiryfaq.approverId, 
+       Enquiryfaq.createDate, 
+       Enquiryfaq.createdBy, 
+       Enquiryfaq.datePromoted, 
+       Enquiryfaq.enquiryStatus, 
+       Enquiryfaq.faqStatus, 
+       Enquiryfaq.isInternalExternal, 
+       Enquiryfaq.itemId, 
+       Enquiryfaq.readCounter, 
+       Enquiryfaq.requiredResponseDate, 
+       Enquiryfaq.sharingOption, 
+       Enquiryfaq.updateDate, 
+       Enquiryfaq.updatedBy, 
+       Enquiryfaq.version,
+dbo.concatPolicyPartition(Enquiryfaq.itemId, 'dept') as IssuingDepartment,
+DATEDIFF(dd, createDate,getdate()) AS EnquiryDays
+FROM EnquiryFaq Enquiryfaq 
+where  Enquiryfaq.EnquiryOrFaq ='ENQ' and Enquiryfaq.enquiryStatus='PENDING') QRSLT  WHERE (DATEDIFF(dd, createDate,getdate()) =) ORDER BY createDate DESC
+24-10-2019 10:44:54,102 INFO  (PolicyExpiryJob.java:57)     – scheduler started::
+24-10-2019 10:44:54,104 INFO  (PolicyExpiryJob.java:58)     – scheduler started:service:oracle.jbo.server.ViewObjectImpl@12b0bff
+24-10-2019 10:44:54,187 INFO  (PolicyExpiryJob.java:75)     –  count::240
+24-10-2019 10:44:54,191 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-934
+24-10-2019 10:44:54,192 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1046
+24-10-2019 10:44:54,194 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1591
+24-10-2019 10:44:54,195 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1262
+24-10-2019 10:44:54,196 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1051
+24-10-2019 10:44:54,198 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1539
+24-10-2019 10:44:54,199 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1029
+24-10-2019 10:44:54,200 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1016
+24-10-2019 10:44:54,201 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-987
+24-10-2019 10:44:54,203 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-986
+24-10-2019 10:44:54,204 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-962
+24-10-2019 10:44:54,205 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1173
+24-10-2019 10:44:54,210 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1657
+24-10-2019 10:44:54,212 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1296
+24-10-2019 10:44:54,213 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-962
+24-10-2019 10:44:54,216 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-976
+24-10-2019 10:44:54,217 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-974
+24-10-2019 10:44:54,218 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-963
+24-10-2019 10:44:54,220 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-777
+24-10-2019 10:44:54,221 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-932
+24-10-2019 10:44:54,223 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1512
+24-10-2019 10:44:54,224 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1848
+24-10-2019 10:44:54,225 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1725
+24-10-2019 10:44:54,226 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1574
+24-10-2019 10:44:54,228 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-962
+24-10-2019 10:44:54,229 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-955
+24-10-2019 10:44:54,230 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1814
+24-10-2019 10:44:54,231 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1694
+24-10-2019 10:44:54,232 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1601
+24-10-2019 10:44:54,233 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1751
+24-10-2019 10:44:54,234 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1751
+24-10-2019 10:44:54,235 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1751
+24-10-2019 10:44:54,236 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1661
+24-10-2019 10:44:54,237 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1570
+24-10-2019 10:44:54,238 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1841
+24-10-2019 10:44:54,239 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1598
+24-10-2019 10:44:54,241 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1151
+24-10-2019 10:44:54,242 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1597
+24-10-2019 10:44:54,243 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1597
+24-10-2019 10:44:54,244 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1595
+24-10-2019 10:44:54,245 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1484
+24-10-2019 10:44:54,246 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1451
+24-10-2019 10:44:54,248 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1543
+24-10-2019 10:44:54,249 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1301
+24-10-2019 10:44:54,250 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1240
+24-10-2019 10:44:54,252 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1240
+24-10-2019 10:44:54,253 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1240
+24-10-2019 10:44:54,254 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1666
+24-10-2019 10:44:54,255 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1755
+24-10-2019 10:44:54,255 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1604
+24-10-2019 10:44:54,256 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1781
+24-10-2019 10:44:54,257 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1781
+24-10-2019 10:44:54,258 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1262
+24-10-2019 10:44:54,259 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1262
+24-10-2019 10:44:54,260 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1330
+24-10-2019 10:44:54,261 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1723
+24-10-2019 10:44:54,262 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1664
+24-10-2019 10:44:54,263 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1542
+24-10-2019 10:44:54,264 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1450
+24-10-2019 10:44:54,265 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1329
+24-10-2019 10:44:54,266 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1329
+24-10-2019 10:44:54,267 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1329
+24-10-2019 10:44:54,268 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1329
+24-10-2019 10:44:54,269 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1572
+24-10-2019 10:44:54,270 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1328
+24-10-2019 10:44:54,271 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1232
+24-10-2019 10:44:54,272 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1844
+24-10-2019 10:44:54,273 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1813
+24-10-2019 10:44:54,275 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1693
+24-10-2019 10:44:54,276 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1571
+24-10-2019 10:44:54,277 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1479
+24-10-2019 10:44:54,278 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1235
+24-10-2019 10:44:54,279 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1235
+24-10-2019 10:44:54,279 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1873
+24-10-2019 10:44:54,280 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1873
+24-10-2019 10:44:54,281 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1751
+24-10-2019 10:44:54,282 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1478
+24-10-2019 10:44:54,284 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1444
+24-10-2019 10:44:54,285 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-578
+24-10-2019 10:44:54,287 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1326
+24-10-2019 10:44:54,288 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1234
+24-10-2019 10:44:54,289 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1234
+24-10-2019 10:44:54,290 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1811
+24-10-2019 10:44:54,291 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1538
+24-10-2019 10:44:54,292 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1385
+24-10-2019 10:44:54,294 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1871
+24-10-2019 10:44:54,296 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1871
+24-10-2019 10:44:54,297 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1718
+24-10-2019 10:44:54,298 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1598
+24-10-2019 10:44:54,299 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1051
+24-10-2019 10:44:54,301 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-839
+24-10-2019 10:44:54,302 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1444
+24-10-2019 10:44:54,303 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1444
+24-10-2019 10:44:54,305 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1443
+24-10-2019 10:44:54,306 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1413
+24-10-2019 10:44:54,308 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1230
+24-10-2019 10:44:54,309 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1144
+24-10-2019 10:44:54,310 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1715
+24-10-2019 10:44:54,311 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1656
+24-10-2019 10:44:54,313 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1199
+24-10-2019 10:44:54,314 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1387
+24-10-2019 10:44:54,315 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1392
+24-10-2019 10:44:54,316 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1666
+24-10-2019 10:44:54,317 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1599
+24-10-2019 10:44:54,318 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1544
+24-10-2019 10:44:54,319 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1544
+24-10-2019 10:44:54,321 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1270
+24-10-2019 10:44:54,322 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1024
+24-10-2019 10:44:54,427 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-993
+24-10-2019 10:44:54,428 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-904
+24-10-2019 10:44:54,430 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1039
+24-10-2019 10:44:54,431 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1039
+24-10-2019 10:44:54,432 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1031
+24-10-2019 10:44:54,433 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1031
+24-10-2019 10:44:54,435 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1029
+24-10-2019 10:44:54,436 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-873
+24-10-2019 10:44:54,437 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1419
+24-10-2019 10:44:54,439 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1357
+24-10-2019 10:44:54,440 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1021
+24-10-2019 10:44:54,441 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1021
+24-10-2019 10:44:54,442 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1018
+24-10-2019 10:44:54,442 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1017
+24-10-2019 10:44:54,443 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1016
+24-10-2019 10:44:54,444 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-901
+24-10-2019 10:44:54,445 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1570
+24-10-2019 10:44:54,446 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1173
+24-10-2019 10:44:54,447 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1142
+24-10-2019 10:44:54,448 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1142
+24-10-2019 10:44:54,449 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1719
+24-10-2019 10:44:54,449 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1477
+24-10-2019 10:44:54,451 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1385
+24-10-2019 10:44:54,451 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1203
+24-10-2019 10:44:54,452 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1537
+24-10-2019 10:44:54,453 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1110
+24-10-2019 10:44:54,454 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1597
+24-10-2019 10:44:54,454 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1567
+24-10-2019 10:44:54,455 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1049
+24-10-2019 10:44:54,456 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1657
+24-10-2019 10:44:54,456 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1474
+24-10-2019 10:44:54,457 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1291
+24-10-2019 10:44:54,458 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1291
+24-10-2019 10:44:54,460 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1200
+24-10-2019 10:44:54,461 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1077
+24-10-2019 10:44:54,462 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1077
+24-10-2019 10:44:54,463 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1057
+24-10-2019 10:44:54,464 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1687
+24-10-2019 10:44:54,465 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1079
+24-10-2019 10:44:54,466 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1260
+24-10-2019 10:44:54,467 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1076
+24-10-2019 10:44:54,468 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1016
+24-10-2019 10:44:54,470 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1014
+24-10-2019 10:44:54,471 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1014
+24-10-2019 10:44:54,472 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-993
+24-10-2019 10:44:54,474 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-993
+24-10-2019 10:44:54,475 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-777
+24-10-2019 10:44:54,477 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1240
+24-10-2019 10:44:54,478 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1087
+24-10-2019 10:44:54,479 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-538
+24-10-2019 10:44:54,480 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1262
+24-10-2019 10:44:54,481 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1118
+24-10-2019 10:44:54,482 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1087
+24-10-2019 10:44:54,483 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1057
+24-10-2019 10:44:54,484 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-783
+24-10-2019 10:44:54,485 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-661
+24-10-2019 10:44:54,486 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1117
+24-10-2019 10:44:54,487 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1299
+24-10-2019 10:44:54,489 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1146
+24-10-2019 10:44:54,490 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-965
+24-10-2019 10:44:54,491 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1176
+24-10-2019 10:44:54,493 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-568
+24-10-2019 10:44:54,494 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-538
+24-10-2019 10:44:54,495 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-538
+24-10-2019 10:44:54,496 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-538
+24-10-2019 10:44:54,497 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-538
+24-10-2019 10:44:54,498 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1266
+24-10-2019 10:44:54,499 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1053
+24-10-2019 10:44:54,501 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1022
+24-10-2019 10:44:54,501 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-506
+24-10-2019 10:44:54,503 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1327
+24-10-2019 10:44:54,504 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1143
+24-10-2019 10:44:54,505 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1262
+24-10-2019 10:44:54,506 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1262
+24-10-2019 10:44:54,507 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1262
+24-10-2019 10:44:54,508 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1249
+24-10-2019 10:44:54,509 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-809
+24-10-2019 10:44:54,510 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-505
+24-10-2019 10:44:54,511 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1756
+24-10-2019 10:44:54,512 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1139
+24-10-2019 10:44:54,513 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1142
+24-10-2019 10:44:54,514 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1545
+24-10-2019 10:44:54,515 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1110
+24-10-2019 10:44:54,516 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-568
+24-10-2019 10:44:54,517 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-871
+24-10-2019 10:44:54,517 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1360
+24-10-2019 10:44:54,518 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1545
+24-10-2019 10:44:54,519 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-960
+24-10-2019 10:44:54,520 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1290
+24-10-2019 10:44:54,521 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1479
+24-10-2019 10:44:54,522 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1665
+24-10-2019 10:44:54,523 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1385
+24-10-2019 10:44:54,524 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-925
+24-10-2019 10:44:54,525 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-959
+24-10-2019 10:44:54,526 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1144
+24-10-2019 10:44:54,527 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1121
+24-10-2019 10:44:54,529 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1134
+24-10-2019 10:44:54,530 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-538
+24-10-2019 10:44:54,531 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1297
+24-10-2019 10:44:54,532 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-538
+24-10-2019 10:44:54,534 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1636
+24-10-2019 10:44:54,535 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1661
+24-10-2019 10:44:54,536 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1697
+24-10-2019 10:44:54,537 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1787
+24-10-2019 10:44:54,539 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1172
+24-10-2019 10:44:54,540 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1139
+24-10-2019 10:44:54,541 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-986
+24-10-2019 10:44:54,542 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-986
+24-10-2019 10:44:54,544 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-986
+24-10-2019 10:44:54,545 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-986
+24-10-2019 10:44:54,546 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-910
+24-10-2019 10:44:54,548 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1053
+24-10-2019 10:44:54,549 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1064
+24-10-2019 10:44:54,550 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-938
+24-10-2019 10:44:54,551 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-942
+24-10-2019 10:44:54,552 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-968
+24-10-2019 10:44:54,554 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-972
+24-10-2019 10:44:54,555 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-975
+24-10-2019 10:44:54,556 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-979
+24-10-2019 10:44:54,557 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-987
+24-10-2019 10:44:54,558 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-993
+24-10-2019 10:44:54,559 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-997
+24-10-2019 10:44:54,560 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-997
+24-10-2019 10:44:54,561 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1044
+24-10-2019 10:44:54,562 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1048
+24-10-2019 10:44:54,562 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1070
+24-10-2019 10:44:54,563 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1087
+24-10-2019 10:44:54,564 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1087
+24-10-2019 10:44:54,565 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1102
+24-10-2019 10:44:54,566 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::230
+24-10-2019 10:44:54,566 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1
+24-10-2019 10:44:54,567 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-2435
+24-10-2019 10:44:54,669 INFO  (PolicyExpiryJob.java:93)     – itemId::1754
+24-10-2019 10:44:54,854 INFO  (PolicyExpiryJob.java:102)     – After while loop execute... 
+24-10-2019 10:44:54,885 INFO  (PolicyExpiryJob.java:93)     – itemId::1798
+24-10-2019 10:44:54,898 INFO  (PolicyExpiryJob.java:102)     – After while loop execute... 
+24-10-2019 10:44:54,907 INFO  (PolicyExpiryJob.java:93)     – itemId::2031
+24-10-2019 10:44:54,921 INFO  (PolicyExpiryJob.java:102)     – After while loop execute... 
+24-10-2019 10:44:54,931 INFO  (PolicyExpiryJob.java:93)     – itemId::321
+24-10-2019 10:44:54,949 INFO  (PolicyExpiryJob.java:102)     – After while loop execute... 
+24-10-2019 10:44:54,957 INFO  (PolicyExpiryJob.java:93)     – itemId::525
+24-10-2019 10:44:54,975 INFO  (PolicyExpiryJob.java:102)     – After while loop execute... 
+24-10-2019 10:44:54,985 INFO  (PolicyExpiryJob.java:93)     – itemId::1803
+24-10-2019 10:44:55,001 INFO  (PolicyExpiryJob.java:102)     – After while loop execute... 
+24-10-2019 10:44:55,010 INFO  (PolicyExpiryJob.java:93)     – itemId::556
+24-10-2019 10:44:55,031 INFO  (PolicyExpiryJob.java:102)     – After while loop execute... 
+24-10-2019 10:44:55,041 INFO  (PolicyExpiryJob.java:93)     – itemId::570
+24-10-2019 10:44:55,059 INFO  (PolicyExpiryJob.java:102)     – After while loop execute... 
+24-10-2019 10:44:55,068 INFO  (PolicyExpiryJob.java:93)     – itemId::579
+24-10-2019 10:44:55,086 INFO  (PolicyExpiryJob.java:102)     – After while loop execute... 
+24-10-2019 10:44:55,096 INFO  (PolicyExpiryJob.java:93)     – itemId::588
+24-10-2019 10:44:55,109 INFO  (PolicyExpiryJob.java:102)     – After while loop execute... 
+24-10-2019 10:44:55,117 INFO  (PolicyExpiryJob.java:93)     – itemId::601
+24-10-2019 10:44:55,131 INFO  (PolicyExpiryJob.java:102)     – After while loop execute... 
+24-10-2019 10:44:55,139 INFO  (PolicyExpiryJob.java:93)     – itemId::1903
+24-10-2019 10:44:55,152 INFO  (PolicyExpiryJob.java:102)     – After while loop execute... 
+24-10-2019 10:44:55,160 INFO  (PolicyExpiryJob.java:93)     – itemId::2027
+24-10-2019 10:44:55,178 INFO  (PolicyExpiryJob.java:102)     – After while loop execute... 
+24-10-2019 10:44:55,187 INFO  (PolicyExpiryJob.java:93)     – itemId::2030
+24-10-2019 10:44:55,204 INFO  (PolicyExpiryJob.java:102)     – After while loop execute... 
+24-10-2019 10:44:55,212 INFO  (PolicyExpiryJob.java:93)     – itemId::600
+24-10-2019 10:44:55,225 INFO  (PolicyExpiryJob.java:102)     – After while loop execute... 
+24-10-2019 10:44:55,233 INFO  (PolicyExpiryJob.java:93)     – itemId::589
+24-10-2019 10:44:55,251 INFO  (PolicyExpiryJob.java:102)     – After while loop execute... 
+24-10-2019 10:44:55,260 INFO  (PolicyExpiryJob.java:93)     – itemId::593
+24-10-2019 10:44:55,293 INFO  (PolicyExpiryJob.java:102)     – After while loop execute... 
+24-10-2019 10:44:55,302 INFO  (PolicyExpiryJob.java:93)     – itemId::599
+24-10-2019 10:44:55,319 INFO  (PolicyExpiryJob.java:102)     – After while loop execute... 
+24-10-2019 10:44:55,328 INFO  (PolicyExpiryJob.java:93)     – itemId::1956
+24-10-2019 10:44:55,345 INFO  (PolicyExpiryJob.java:102)     – After while loop execute... 
+24-10-2019 10:44:55,354 INFO  (PolicyExpiryJob.java:93)     – itemId::1958
+24-10-2019 10:44:55,372 INFO  (PolicyExpiryJob.java:102)     – After while loop execute... 
+24-10-2019 10:44:55,380 INFO  (PolicyExpiryJob.java:93)     – itemId::1965
+24-10-2019 10:44:55,398 INFO  (PolicyExpiryJob.java:102)     – After while loop execute... 
+24-10-2019 10:44:55,409 INFO  (PolicyExpiryJob.java:93)     – itemId::1972
+24-10-2019 10:44:55,445 ERROR (PolicyExpiryJob.java:180)     – JBO-25013: Too many objects match the primary key oracle.jbo.Key[1972 ].
+24-10-2019 10:44:55,451 INFO  (PolicyExpiryJob.java:185)     – sendMailNotificationOfAnnual Out
+24-10-2019 10:44:55,538 ERROR (SupportingDocumentsJob.java:86)     – JBO-27122: SQL error during statement preparation.  Statement: SELECT * FROM (SELECT Requestlist.requestId, 
+       Requestlist.itemId, 
+       Requestlist.typeOfReqId, 
+       Requestlist.typeOfReqName, 
+       Requestlist.typeOfReq, 
+       Requestlist.requestorId, 
+       Requestlist.approverId, 
+       Requestlist.reasonForRequest, 
+       Requestlist.reasonForRejection, 
+       Requestlist.status, 
+       Requestlist.createDate, 
+       Requestlist.updateDate, 
+       Requestlist.Designation,
+       CASE WHEN status = 'PENDING' THEN DATEDIFF(dd, createDate,getdate())         ELSE 0 END as RequestDays,
+       CASE WHEN Requestlist.status = 'PENDING' THEN '1' 
+            WHEN Requestlist.status = 'APPROVED' THEN '2' 
+       ELSE '3' END as statusOrder
+FROM RequestList Requestlist) QRSLT  WHERE (status ='PENDING' AND DATEDIFF(dd, createDate,getdate()) =) ORDER BY statusOrder, createDate desc
+25-10-2019 12:56:27,243 ERROR (EnquiryJob.java:104)     – JBO-27122: SQL error during statement preparation.  Statement: SELECT * FROM (SELECT Enquiryfaq.Abstract AS Abstract11, 
+       Enquiryfaq.AddField, 
+       Enquiryfaq.CreatedbyInstitutionId, 
+       Enquiryfaq.CurrentItemtype, 
+       Enquiryfaq.EnquirerBNMRole, 
+       Enquiryfaq.EnquirerFIRole, 
+       Enquiryfaq.EnquiryFAQId, 
+       Enquiryfaq.EnquiryOrFaq, 
+       Enquiryfaq.OrigAbstract, 
+       Enquiryfaq.OrigTitle, 
+       Enquiryfaq.OriginType, 
+       Enquiryfaq.OriginalItemtype, 
+       Enquiryfaq.Title, 
+       Enquiryfaq.approverId, 
+       Enquiryfaq.createDate, 
+       Enquiryfaq.createdBy, 
+       Enquiryfaq.datePromoted, 
+       Enquiryfaq.enquiryStatus, 
+       Enquiryfaq.faqStatus, 
+       Enquiryfaq.isInternalExternal, 
+       Enquiryfaq.itemId, 
+       Enquiryfaq.readCounter, 
+       Enquiryfaq.requiredResponseDate, 
+       Enquiryfaq.sharingOption, 
+       Enquiryfaq.updateDate, 
+       Enquiryfaq.updatedBy, 
+       Enquiryfaq.version,
+dbo.concatPolicyPartition(Enquiryfaq.itemId, 'dept') as IssuingDepartment,
+DATEDIFF(dd, createDate,getdate()) AS EnquiryDays
+FROM EnquiryFaq Enquiryfaq 
+where  Enquiryfaq.EnquiryOrFaq ='ENQ' and Enquiryfaq.enquiryStatus='PENDING') QRSLT  WHERE (DATEDIFF(dd, createDate,getdate()) =) ORDER BY createDate DESC
+25-10-2019 12:56:27,278 INFO  (PolicyExpiryJob.java:57)     – scheduler started::
+25-10-2019 12:56:27,278 INFO  (PolicyExpiryJob.java:58)     – scheduler started:service:oracle.jbo.server.ViewObjectImpl@1ee5f5e
+25-10-2019 12:56:27,287 INFO  (PolicyExpiryJob.java:75)     –  count::219
+25-10-2019 12:56:27,288 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1849
+25-10-2019 12:56:27,288 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1726
+25-10-2019 12:56:27,289 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1575
+25-10-2019 12:56:27,289 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-963
+25-10-2019 12:56:27,289 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-956
+25-10-2019 12:56:27,289 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1815
+25-10-2019 12:56:27,289 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1695
+25-10-2019 12:56:27,290 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1602
+25-10-2019 12:56:27,290 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1752
+25-10-2019 12:56:27,290 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1752
+25-10-2019 12:56:27,290 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1752
+25-10-2019 12:56:27,291 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1662
+25-10-2019 12:56:27,292 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1571
+25-10-2019 12:56:27,292 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1842
+25-10-2019 12:56:27,292 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1599
+25-10-2019 12:56:27,293 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1152
+25-10-2019 12:56:27,293 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1598
+25-10-2019 12:56:27,293 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1598
+25-10-2019 12:56:27,294 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1596
+25-10-2019 12:56:27,294 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1485
+25-10-2019 12:56:27,294 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1452
+25-10-2019 12:56:27,294 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1544
+25-10-2019 12:56:27,295 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1302
+25-10-2019 12:56:27,295 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1241
+25-10-2019 12:56:27,295 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1241
+25-10-2019 12:56:27,296 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1241
+25-10-2019 12:56:27,296 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1667
+25-10-2019 12:56:27,296 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1756
+25-10-2019 12:56:27,296 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1605
+25-10-2019 12:56:27,296 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1782
+25-10-2019 12:56:27,297 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1782
+25-10-2019 12:56:27,297 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1263
+25-10-2019 12:56:27,297 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1263
+25-10-2019 12:56:27,297 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1331
+25-10-2019 12:56:27,297 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1724
+25-10-2019 12:56:27,298 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1665
+25-10-2019 12:56:27,298 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1543
+25-10-2019 12:56:27,298 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1451
+25-10-2019 12:56:27,298 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1330
+25-10-2019 12:56:27,299 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1330
+25-10-2019 12:56:27,299 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1330
+25-10-2019 12:56:27,299 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1330
+25-10-2019 12:56:27,299 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1573
+25-10-2019 12:56:27,300 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1329
+25-10-2019 12:56:27,300 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1233
+25-10-2019 12:56:27,300 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1845
+25-10-2019 12:56:27,300 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1814
+25-10-2019 12:56:27,301 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1694
+25-10-2019 12:56:27,301 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1572
+25-10-2019 12:56:27,301 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1480
+25-10-2019 12:56:27,301 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1236
+25-10-2019 12:56:27,301 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1236
+25-10-2019 12:56:27,302 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1874
+25-10-2019 12:56:27,302 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1874
+25-10-2019 12:56:27,302 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1752
+25-10-2019 12:56:27,302 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1479
+25-10-2019 12:56:27,302 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1445
+25-10-2019 12:56:27,303 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-579
+25-10-2019 12:56:27,303 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1327
+25-10-2019 12:56:27,303 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1235
+25-10-2019 12:56:27,303 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1235
+25-10-2019 12:56:27,303 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1812
+25-10-2019 12:56:27,304 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1539
+25-10-2019 12:56:27,304 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1386
+25-10-2019 12:56:27,304 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1872
+25-10-2019 12:56:27,305 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1872
+25-10-2019 12:56:27,305 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1719
+25-10-2019 12:56:27,305 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1599
+25-10-2019 12:56:27,305 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1052
+25-10-2019 12:56:27,306 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-840
+25-10-2019 12:56:27,306 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1445
+25-10-2019 12:56:27,306 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1445
+25-10-2019 12:56:27,307 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1444
+25-10-2019 12:56:27,307 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1414
+25-10-2019 12:56:27,307 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1231
+25-10-2019 12:56:27,308 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1145
+25-10-2019 12:56:27,308 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1716
+25-10-2019 12:56:27,308 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1657
+25-10-2019 12:56:27,308 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1200
+25-10-2019 12:56:27,309 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1388
+25-10-2019 12:56:27,309 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1393
+25-10-2019 12:56:27,309 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1667
+25-10-2019 12:56:27,309 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1600
+25-10-2019 12:56:27,309 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1545
+25-10-2019 12:56:27,310 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1545
+25-10-2019 12:56:27,310 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1271
+25-10-2019 12:56:27,310 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1025
+25-10-2019 12:56:27,310 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-994
+25-10-2019 12:56:27,311 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-905
+25-10-2019 12:56:27,311 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1040
+25-10-2019 12:56:27,311 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1040
+25-10-2019 12:56:27,311 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1032
+25-10-2019 12:56:27,312 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1032
+25-10-2019 12:56:27,312 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1030
+25-10-2019 12:56:27,312 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-874
+25-10-2019 12:56:27,312 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1420
+25-10-2019 12:56:27,312 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1358
+25-10-2019 12:56:27,313 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1022
+25-10-2019 12:56:27,313 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1022
+25-10-2019 12:56:27,313 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1019
+25-10-2019 12:56:27,314 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1018
+25-10-2019 12:56:27,314 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1017
+25-10-2019 12:56:27,314 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-902
+25-10-2019 12:56:27,314 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1571
+25-10-2019 12:56:27,315 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1174
+25-10-2019 12:56:27,315 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1143
+25-10-2019 12:56:27,315 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1143
+25-10-2019 12:56:27,315 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1720
+25-10-2019 12:56:27,315 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1478
+25-10-2019 12:56:27,316 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1386
+25-10-2019 12:56:27,316 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1204
+25-10-2019 12:56:27,316 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1538
+25-10-2019 12:56:27,316 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1111
+25-10-2019 12:56:27,317 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1598
+25-10-2019 12:56:27,317 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1568
+25-10-2019 12:56:27,317 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1050
+25-10-2019 12:56:27,317 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1658
+25-10-2019 12:56:27,318 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1475
+25-10-2019 12:56:27,318 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1292
+25-10-2019 12:56:27,318 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1292
+25-10-2019 12:56:27,319 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1201
+25-10-2019 12:56:27,319 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1078
+25-10-2019 12:56:27,319 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1078
+25-10-2019 12:56:27,319 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1058
+25-10-2019 12:56:27,320 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1688
+25-10-2019 12:56:27,321 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1080
+25-10-2019 12:56:27,321 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1261
+25-10-2019 12:56:27,322 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1077
+25-10-2019 12:56:27,322 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1017
+25-10-2019 12:56:27,323 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1015
+25-10-2019 12:56:27,323 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1015
+25-10-2019 12:56:27,324 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-994
+25-10-2019 12:56:27,324 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-994
+25-10-2019 12:56:27,324 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-778
+25-10-2019 12:56:27,324 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1241
+25-10-2019 12:56:27,325 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1088
+25-10-2019 12:56:27,325 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-539
+25-10-2019 12:56:27,325 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1263
+25-10-2019 12:56:27,325 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1119
+25-10-2019 12:56:27,325 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1088
+25-10-2019 12:56:27,326 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1058
+25-10-2019 12:56:27,326 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-784
+25-10-2019 12:56:27,326 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-662
+25-10-2019 12:56:27,326 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1118
+25-10-2019 12:56:27,327 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1300
+25-10-2019 12:56:27,327 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1147
+25-10-2019 12:56:27,327 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-966
+25-10-2019 12:56:27,327 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1177
+25-10-2019 12:56:27,328 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-569
+25-10-2019 12:56:27,328 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-539
+25-10-2019 12:56:27,328 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-539
+25-10-2019 12:56:27,328 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-539
+25-10-2019 12:56:27,329 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-539
+25-10-2019 12:56:27,329 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1267
+25-10-2019 12:56:27,329 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1054
+25-10-2019 12:56:27,329 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1023
+25-10-2019 12:56:27,329 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-507
+25-10-2019 12:56:27,330 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1328
+25-10-2019 12:56:27,330 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1144
+25-10-2019 12:56:27,330 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1263
+25-10-2019 12:56:27,330 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1263
+25-10-2019 12:56:27,331 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1263
+25-10-2019 12:56:27,331 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1250
+25-10-2019 12:56:27,331 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-810
+25-10-2019 12:56:27,331 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-506
+25-10-2019 12:56:27,331 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1757
+25-10-2019 12:56:27,332 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1140
+25-10-2019 12:56:27,332 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1143
+25-10-2019 12:56:27,332 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1546
+25-10-2019 12:56:27,332 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1111
+25-10-2019 12:56:27,332 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-569
+25-10-2019 12:56:27,333 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-872
+25-10-2019 12:56:27,333 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1361
+25-10-2019 12:56:27,333 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1546
+25-10-2019 12:56:27,333 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-961
+25-10-2019 12:56:27,334 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1291
+25-10-2019 12:56:27,334 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1480
+25-10-2019 12:56:27,334 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1666
+25-10-2019 12:56:27,334 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1386
+25-10-2019 12:56:27,335 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-926
+25-10-2019 12:56:27,335 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-960
+25-10-2019 12:56:27,336 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1145
+25-10-2019 12:56:27,336 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1122
+25-10-2019 12:56:27,336 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1135
+25-10-2019 12:56:27,336 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-539
+25-10-2019 12:56:27,337 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1298
+25-10-2019 12:56:27,337 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-539
+25-10-2019 12:56:27,337 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1637
+25-10-2019 12:56:27,337 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1662
+25-10-2019 12:56:27,337 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1698
+25-10-2019 12:56:27,338 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1788
+25-10-2019 12:56:27,338 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1173
+25-10-2019 12:56:27,338 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1140
+25-10-2019 12:56:27,338 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-987
+25-10-2019 12:56:27,339 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-987
+25-10-2019 12:56:27,339 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-987
+25-10-2019 12:56:27,339 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-987
+25-10-2019 12:56:27,339 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-911
+25-10-2019 12:56:27,339 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1054
+25-10-2019 12:56:27,340 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1065
+25-10-2019 12:56:27,340 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-939
+25-10-2019 12:56:27,340 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-943
+25-10-2019 12:56:27,340 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-969
+25-10-2019 12:56:27,340 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-973
+25-10-2019 12:56:27,341 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-976
+25-10-2019 12:56:27,341 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-980
+25-10-2019 12:56:27,341 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-988
+25-10-2019 12:56:27,341 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-994
+25-10-2019 12:56:27,341 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-998
+25-10-2019 12:56:27,342 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-998
+25-10-2019 12:56:27,342 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1045
+25-10-2019 12:56:27,342 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1049
+25-10-2019 12:56:27,342 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1071
+25-10-2019 12:56:27,343 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1088
+25-10-2019 12:56:27,343 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1088
+25-10-2019 12:56:27,344 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1103
+25-10-2019 12:56:27,344 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::229
+25-10-2019 12:56:27,344 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-2
+25-10-2019 12:56:27,344 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-2436
+25-10-2019 12:56:27,344 INFO  (PolicyExpiryJob.java:93)     – itemId::1972
+25-10-2019 12:56:27,393 ERROR (PolicyExpiryJob.java:180)     – JBO-25013: Too many objects match the primary key oracle.jbo.Key[1972 ].
+25-10-2019 12:56:27,396 INFO  (PolicyExpiryJob.java:185)     – sendMailNotificationOfAnnual Out
+25-10-2019 12:56:27,414 ERROR (SupportingDocumentsJob.java:86)     – JBO-27122: SQL error during statement preparation.  Statement: SELECT * FROM (SELECT Requestlist.requestId, 
+       Requestlist.itemId, 
+       Requestlist.typeOfReqId, 
+       Requestlist.typeOfReqName, 
+       Requestlist.typeOfReq, 
+       Requestlist.requestorId, 
+       Requestlist.approverId, 
+       Requestlist.reasonForRequest, 
+       Requestlist.reasonForRejection, 
+       Requestlist.status, 
+       Requestlist.createDate, 
+       Requestlist.updateDate, 
+       Requestlist.Designation,
+       CASE WHEN status = 'PENDING' THEN DATEDIFF(dd, createDate,getdate())         ELSE 0 END as RequestDays,
+       CASE WHEN Requestlist.status = 'PENDING' THEN '1' 
+            WHEN Requestlist.status = 'APPROVED' THEN '2' 
+       ELSE '3' END as statusOrder
+FROM RequestList Requestlist) QRSLT  WHERE (status ='PENDING' AND DATEDIFF(dd, createDate,getdate()) =) ORDER BY statusOrder, createDate desc
+26-10-2019 10:01:02,360 ERROR (EnquiryJob.java:104)     – JBO-27122: SQL error during statement preparation.  Statement: SELECT * FROM (SELECT Enquiryfaq.Abstract AS Abstract11, 
+       Enquiryfaq.AddField, 
+       Enquiryfaq.CreatedbyInstitutionId, 
+       Enquiryfaq.CurrentItemtype, 
+       Enquiryfaq.EnquirerBNMRole, 
+       Enquiryfaq.EnquirerFIRole, 
+       Enquiryfaq.EnquiryFAQId, 
+       Enquiryfaq.EnquiryOrFaq, 
+       Enquiryfaq.OrigAbstract, 
+       Enquiryfaq.OrigTitle, 
+       Enquiryfaq.OriginType, 
+       Enquiryfaq.OriginalItemtype, 
+       Enquiryfaq.Title, 
+       Enquiryfaq.approverId, 
+       Enquiryfaq.createDate, 
+       Enquiryfaq.createdBy, 
+       Enquiryfaq.datePromoted, 
+       Enquiryfaq.enquiryStatus, 
+       Enquiryfaq.faqStatus, 
+       Enquiryfaq.isInternalExternal, 
+       Enquiryfaq.itemId, 
+       Enquiryfaq.readCounter, 
+       Enquiryfaq.requiredResponseDate, 
+       Enquiryfaq.sharingOption, 
+       Enquiryfaq.updateDate, 
+       Enquiryfaq.updatedBy, 
+       Enquiryfaq.version,
+dbo.concatPolicyPartition(Enquiryfaq.itemId, 'dept') as IssuingDepartment,
+DATEDIFF(dd, createDate,getdate()) AS EnquiryDays
+FROM EnquiryFaq Enquiryfaq 
+where  Enquiryfaq.EnquiryOrFaq ='ENQ' and Enquiryfaq.enquiryStatus='PENDING') QRSLT  WHERE (DATEDIFF(dd, createDate,getdate()) =) ORDER BY createDate DESC
+26-10-2019 10:01:02,368 INFO  (PolicyExpiryJob.java:57)     – scheduler started::
+26-10-2019 10:01:02,369 INFO  (PolicyExpiryJob.java:58)     – scheduler started:service:oracle.jbo.server.ViewObjectImpl@1de52ab
+26-10-2019 10:01:02,372 INFO  (PolicyExpiryJob.java:75)     –  count::219
+26-10-2019 10:01:02,373 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1850
+26-10-2019 10:01:02,373 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1727
+26-10-2019 10:01:02,373 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1576
+26-10-2019 10:01:02,373 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-964
+26-10-2019 10:01:02,374 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-957
+26-10-2019 10:01:02,374 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1816
+26-10-2019 10:01:02,374 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1696
+26-10-2019 10:01:02,374 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1603
+26-10-2019 10:01:02,374 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1753
+26-10-2019 10:01:02,374 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1753
+26-10-2019 10:01:02,374 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1753
+26-10-2019 10:01:02,374 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1663
+26-10-2019 10:01:02,375 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1572
+26-10-2019 10:01:02,375 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1843
+26-10-2019 10:01:02,375 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1600
+26-10-2019 10:01:02,376 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1153
+26-10-2019 10:01:02,376 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1599
+26-10-2019 10:01:02,376 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1599
+26-10-2019 10:01:02,376 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1597
+26-10-2019 10:01:02,376 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1486
+26-10-2019 10:01:02,376 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1453
+26-10-2019 10:01:02,377 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1545
+26-10-2019 10:01:02,377 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1303
+26-10-2019 10:01:02,377 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1242
+26-10-2019 10:01:02,377 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1242
+26-10-2019 10:01:02,377 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1242
+26-10-2019 10:01:02,377 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1668
+26-10-2019 10:01:02,377 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1757
+26-10-2019 10:01:02,378 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1606
+26-10-2019 10:01:02,378 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1783
+26-10-2019 10:01:02,378 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1783
+26-10-2019 10:01:02,378 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1264
+26-10-2019 10:01:02,378 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1264
+26-10-2019 10:01:02,378 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1332
+26-10-2019 10:01:02,378 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1725
+26-10-2019 10:01:02,378 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1666
+26-10-2019 10:01:02,379 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1544
+26-10-2019 10:01:02,379 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1452
+26-10-2019 10:01:02,379 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1331
+26-10-2019 10:01:02,379 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1331
+26-10-2019 10:01:02,379 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1331
+26-10-2019 10:01:02,379 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1331
+26-10-2019 10:01:02,379 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1574
+26-10-2019 10:01:02,379 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1330
+26-10-2019 10:01:02,380 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1234
+26-10-2019 10:01:02,380 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1846
+26-10-2019 10:01:02,380 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1815
+26-10-2019 10:01:02,380 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1695
+26-10-2019 10:01:02,380 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1573
+26-10-2019 10:01:02,380 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1481
+26-10-2019 10:01:02,380 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1237
+26-10-2019 10:01:02,380 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1237
+26-10-2019 10:01:02,381 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1875
+26-10-2019 10:01:02,381 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1875
+26-10-2019 10:01:02,381 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1753
+26-10-2019 10:01:02,381 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1480
+26-10-2019 10:01:02,381 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1446
+26-10-2019 10:01:02,381 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-580
+26-10-2019 10:01:02,381 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1328
+26-10-2019 10:01:02,382 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1236
+26-10-2019 10:01:02,382 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1236
+26-10-2019 10:01:02,382 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1813
+26-10-2019 10:01:02,382 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1540
+26-10-2019 10:01:02,382 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1387
+26-10-2019 10:01:02,382 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1873
+26-10-2019 10:01:02,382 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1873
+26-10-2019 10:01:02,382 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1720
+26-10-2019 10:01:02,383 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1600
+26-10-2019 10:01:02,383 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1053
+26-10-2019 10:01:02,383 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-841
+26-10-2019 10:01:02,383 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1446
+26-10-2019 10:01:02,383 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1446
+26-10-2019 10:01:02,383 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1445
+26-10-2019 10:01:02,383 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1415
+26-10-2019 10:01:02,384 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1232
+26-10-2019 10:01:02,384 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1146
+26-10-2019 10:01:02,384 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1717
+26-10-2019 10:01:02,384 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1658
+26-10-2019 10:01:02,384 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1201
+26-10-2019 10:01:02,384 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1389
+26-10-2019 10:01:02,384 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1394
+26-10-2019 10:01:02,384 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1668
+26-10-2019 10:01:02,385 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1601
+26-10-2019 10:01:02,385 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1546
+26-10-2019 10:01:02,385 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1546
+26-10-2019 10:01:02,385 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1272
+26-10-2019 10:01:02,385 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1026
+26-10-2019 10:01:02,385 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-995
+26-10-2019 10:01:02,385 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-906
+26-10-2019 10:01:02,386 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1041
+26-10-2019 10:01:02,386 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1041
+26-10-2019 10:01:02,386 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1033
+26-10-2019 10:01:02,386 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1033
+26-10-2019 10:01:02,386 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1031
+26-10-2019 10:01:02,386 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-875
+26-10-2019 10:01:02,386 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1421
+26-10-2019 10:01:02,386 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1359
+26-10-2019 10:01:02,387 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1023
+26-10-2019 10:01:02,387 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1023
+26-10-2019 10:01:02,387 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1020
+26-10-2019 10:01:02,387 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1019
+26-10-2019 10:01:02,387 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1018
+26-10-2019 10:01:02,387 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-903
+26-10-2019 10:01:02,388 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1572
+26-10-2019 10:01:02,388 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1175
+26-10-2019 10:01:02,388 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1144
+26-10-2019 10:01:02,388 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1144
+26-10-2019 10:01:02,388 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1721
+26-10-2019 10:01:02,388 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1479
+26-10-2019 10:01:02,388 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1387
+26-10-2019 10:01:02,388 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1205
+26-10-2019 10:01:02,389 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1539
+26-10-2019 10:01:02,389 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1112
+26-10-2019 10:01:02,389 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1599
+26-10-2019 10:01:02,389 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1569
+26-10-2019 10:01:02,389 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1051
+26-10-2019 10:01:02,389 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1659
+26-10-2019 10:01:02,389 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1476
+26-10-2019 10:01:02,389 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1293
+26-10-2019 10:01:02,390 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1293
+26-10-2019 10:01:02,390 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1202
+26-10-2019 10:01:02,390 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1079
+26-10-2019 10:01:02,390 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1079
+26-10-2019 10:01:02,390 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1059
+26-10-2019 10:01:02,390 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1689
+26-10-2019 10:01:02,390 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1081
+26-10-2019 10:01:02,391 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1262
+26-10-2019 10:01:02,391 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1078
+26-10-2019 10:01:02,391 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1018
+26-10-2019 10:01:02,391 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1016
+26-10-2019 10:01:02,391 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1016
+26-10-2019 10:01:02,391 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-995
+26-10-2019 10:01:02,391 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-995
+26-10-2019 10:01:02,392 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-779
+26-10-2019 10:01:02,392 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1242
+26-10-2019 10:01:02,392 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1089
+26-10-2019 10:01:02,392 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-540
+26-10-2019 10:01:02,392 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1264
+26-10-2019 10:01:02,392 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1120
+26-10-2019 10:01:02,392 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1089
+26-10-2019 10:01:02,393 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1059
+26-10-2019 10:01:02,393 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-785
+26-10-2019 10:01:02,393 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-663
+26-10-2019 10:01:02,393 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1119
+26-10-2019 10:01:02,393 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1301
+26-10-2019 10:01:02,393 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1148
+26-10-2019 10:01:02,393 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-967
+26-10-2019 10:01:02,393 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1178
+26-10-2019 10:01:02,394 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-570
+26-10-2019 10:01:02,394 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-540
+26-10-2019 10:01:02,394 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-540
+26-10-2019 10:01:02,394 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-540
+26-10-2019 10:01:02,394 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-540
+26-10-2019 10:01:02,394 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1268
+26-10-2019 10:01:02,394 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1055
+26-10-2019 10:01:02,394 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1024
+26-10-2019 10:01:02,395 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-508
+26-10-2019 10:01:02,395 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1329
+26-10-2019 10:01:02,395 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1145
+26-10-2019 10:01:02,395 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1264
+26-10-2019 10:01:02,395 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1264
+26-10-2019 10:01:02,395 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1264
+26-10-2019 10:01:02,395 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1251
+26-10-2019 10:01:02,396 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-811
+26-10-2019 10:01:02,396 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-507
+26-10-2019 10:01:02,396 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1758
+26-10-2019 10:01:02,396 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1141
+26-10-2019 10:01:02,396 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1144
+26-10-2019 10:01:02,396 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1547
+26-10-2019 10:01:02,396 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1112
+26-10-2019 10:01:02,396 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-570
+26-10-2019 10:01:02,397 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-873
+26-10-2019 10:01:02,397 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1362
+26-10-2019 10:01:02,397 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1547
+26-10-2019 10:01:02,397 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-962
+26-10-2019 10:01:02,397 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1292
+26-10-2019 10:01:02,397 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1481
+26-10-2019 10:01:02,397 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1667
+26-10-2019 10:01:02,397 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1387
+26-10-2019 10:01:02,398 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-927
+26-10-2019 10:01:02,398 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-961
+26-10-2019 10:01:02,398 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1146
+26-10-2019 10:01:02,398 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1123
+26-10-2019 10:01:02,398 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1136
+26-10-2019 10:01:02,398 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-540
+26-10-2019 10:01:02,398 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1299
+26-10-2019 10:01:02,399 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-540
+26-10-2019 10:01:02,399 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1638
+26-10-2019 10:01:02,399 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1663
+26-10-2019 10:01:02,399 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1699
+26-10-2019 10:01:02,399 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1789
+26-10-2019 10:01:02,399 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1174
+26-10-2019 10:01:02,399 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1141
+26-10-2019 10:01:02,399 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-988
+26-10-2019 10:01:02,400 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-988
+26-10-2019 10:01:02,400 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-988
+26-10-2019 10:01:02,400 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-988
+26-10-2019 10:01:02,400 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-912
+26-10-2019 10:01:02,400 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1055
+26-10-2019 10:01:02,400 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1066
+26-10-2019 10:01:02,400 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-940
+26-10-2019 10:01:02,400 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-944
+26-10-2019 10:01:02,401 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-970
+26-10-2019 10:01:02,401 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-974
+26-10-2019 10:01:02,401 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-977
+26-10-2019 10:01:02,401 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-981
+26-10-2019 10:01:02,401 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-989
+26-10-2019 10:01:02,401 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-995
+26-10-2019 10:01:02,401 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-999
+26-10-2019 10:01:02,401 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-999
+26-10-2019 10:01:02,402 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1046
+26-10-2019 10:01:02,402 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1050
+26-10-2019 10:01:02,402 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1072
+26-10-2019 10:01:02,402 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1089
+26-10-2019 10:01:02,402 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1089
+26-10-2019 10:01:02,402 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-1104
+26-10-2019 10:01:02,402 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::228
+26-10-2019 10:01:02,402 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-3
+26-10-2019 10:01:02,403 INFO  (PolicyExpiryJob.java:79)     –  rowAge.getdaysDiff()::-2437
+26-10-2019 10:01:02,403 INFO  (PolicyExpiryJob.java:93)     – itemId::1972
+26-10-2019 10:01:02,432 ERROR (PolicyExpiryJob.java:180)     – JBO-25013: Too many objects match the primary key oracle.jbo.Key[1972 ].
+26-10-2019 10:01:02,434 INFO  (PolicyExpiryJob.java:185)     – sendMailNotificationOfAnnual Out
+26-10-2019 10:01:02,446 ERROR (SupportingDocumentsJob.java:86)     – JBO-27122: SQL error during statement preparation.  Statement: SELECT * FROM (SELECT Requestlist.requestId, 
+       Requestlist.itemId, 
+       Requestlist.typeOfReqId, 
+       Requestlist.typeOfReqName, 
+       Requestlist.typeOfReq, 
+       Requestlist.requestorId, 
+       Requestlist.approverId, 
+       Requestlist.reasonForRequest, 
+       Requestlist.reasonForRejection, 
+       Requestlist.status, 
+       Requestlist.createDate, 
+       Requestlist.updateDate, 
+       Requestlist.Designation,
+       CASE WHEN status = 'PENDING' THEN DATEDIFF(dd, createDate,getdate())         ELSE 0 END as RequestDays,
+       CASE WHEN Requestlist.status = 'PENDING' THEN '1' 
+            WHEN Requestlist.status = 'APPROVED' THEN '2' 
+       ELSE '3' END as statusOrder
+FROM RequestList Requestlist) QRSLT  WHERE (status ='PENDING' AND DATEDIFF(dd, createDate,getdate()) =) ORDER BY statusOrder, createDate desc

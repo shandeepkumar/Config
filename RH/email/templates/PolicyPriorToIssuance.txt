@@ -1,0 +1,20 @@
+<%SUBJECT%>
+Dear Deputy Governors, Assistant Governors and Directors, 
+<BR>
+<BR>
+The <%title of the policy%> will be published in the Regulatory Handbook on <%issuance date%>. Details are as follows:
+<BR>
+<BR>
+Summary: <%summary%>
+<BR>
+<BR>
+ <%Latest Highlights%>
+<BR>
+<BR>
+Department: <%Department%>
+<BR>
+<BR>
+Person In Charge: <%author%>
+<BR>
+<BR>
+Thank you.

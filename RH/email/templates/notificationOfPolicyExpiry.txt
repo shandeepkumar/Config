@@ -1,0 +1,16 @@
+<%SUBJECT%> Change it
+Dear Director, 
+<BR>
+<BR>
+Please be informed that <%Policy Name%> will expire on <%date%>.  As stated in Para 6.4 of the Policy Development Framework, all policies must be reviewed every 5 years of implementation or earlier as determined by Management, from the last date of issuance/ major review. 
+<BR>
+<BR>
+In this regard, we would appreciate it if Director could confirm whether a review of the policy would be undertaken. Please choose ONE of the following options:
+<BR>
+<BR>
+a)	YES : <a href="http://127.0.0.1:7101/RegulatoryHandbook-ViewController-context-root/faces/adf.task-flow?adf.tfId=btf_RHMain&adf.tfDoc=/WEB-INF/PageFlows/taskFlow/btf_RHMain.xml&fldTokenId=&fldPolicyId=<%PolicyId%>&fldUserAction=PACP">Click here to extend expiry date</a> 
+<BR>
+b)	NO :   Archive upon expiry
+<BR>
+<BR>
+Thank you.

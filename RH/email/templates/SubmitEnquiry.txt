@@ -1,0 +1,19 @@
+<%SUBJECT%>Enquiry on <%policy title%>
+Dear Director, 
+<BR>
+<BR>
+There is an enquiry on <%policy title%> for your attention, details as follows:
+<BR>
+	Enquirer :<%name of enquirer%>
+<BR>
+	From	 :<%name of supervised institution or department %> 
+<BR>
+	Enquiry	 :<%Question%>
+<BR>
+<BR>
+Please click here to respond to this enquiry. Thank you.
+<BR>
+<BR>
+Note:Please do not reply to this e-mail.
+
+

@@ -1,0 +1,22 @@
+<%SUBJECT%>Regulatory Policy Enquiry Requiring Response
+
+Dear Director, 
+<BR>
+<BR>
+This is a reminder that an enquiry on <%policy title%> which requires your attention.
+Please click on the link below to view and respond to this enquiry.
+The details are as follows:
+<BR>
+	Enquirer     :<%name of enquirer%>
+<BR>
+	From	     :<%name of supervised institution or department %> 
+<BR>
+	Enquiry	     :<%Question%>
+<BR>
+        Enquiry Date :<%date of enquiry%>
+<BR>
+<BR>	
+Please click here to respond to this enquiry. Thank you.
+<BR>
+<BR>
+Note	:	Please do not reply to this e-mail

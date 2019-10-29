@@ -1,0 +1,10 @@
+<%SUBJECT%> 
+Dear <%Requester Name%>,
+<BR>
+<BR>
+Your request to access <%supporting doc name%> of <%policy document title%> has been approved. This access is valid for 14-days only.
+<BR>
+<BR>
+Thank you.
+
+
